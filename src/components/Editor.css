@@ -1,0 +1,45 @@
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.editor-body {
+  flex: 1;
+  overflow: hidden;
+  background-color: #1e1e1e;
+  border-radius: 4px;
+}
+
+/* CodeMirror overrides for consistency */
+.editor-body .cm-editor {
+  height: 100%;
+  font-family: "Courier New", Courier, monospace !important;
+  font-size: 14px !important;
+  line-height: 1.5 !important;
+  background-color: #1e1e1e !important;
+  cursor: text !important;
+}
+
+.editor-body .cm-gutters {
+  background-color: #1e1e1e !important;
+  border-right: 1px solid #3e3e3e !important;
+}
+
+.editor-body .cm-lineNumbers {
+  color: #858585 !important;
+  min-width: 72px !important;
+}
+
+.editor-body .cm-content {
+  padding-top: 0 !important;
+}
+
+.editor-info {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+  font-size: 0.85rem;
+  color: #999;
+  padding: 0.5rem 1rem;
+}

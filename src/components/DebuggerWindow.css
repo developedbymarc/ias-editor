@@ -1,0 +1,180 @@
+.debugger-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.25rem;
+  gap: 1.5rem;
+}
+
+.debugger-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background-color: #1e1e1e;
+  border: 1px solid #3e3e3e;
+  border-radius: 4px;
+}
+
+.debugger-section h3 {
+  margin: 0 0 0.75rem 0;
+  color: #61dafb;
+  font-size: 1rem;
+  border-bottom: 1px solid #3e3e3e;
+  padding-bottom: 0.5rem;
+}
+
+.registers-table,
+.memory-table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 0.85rem;
+}
+
+.registers-table th,
+.memory-table th {
+  background-color: #2d2d2d;
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 2px solid #3e3e3e;
+  color: #61dafb;
+  font-weight: 600;
+}
+
+.registers-table td,
+.memory-table td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #3e3e3e;
+}
+
+.registers-table tr:hover,
+.memory-table tr:hover {
+  background-color: #2d2d2d;
+}
+
+.reg-name {
+  color: #4ec9b0;
+  font-weight: 600;
+}
+
+.reg-value {
+  color: #ce9178;
+  font-family: monospace;
+}
+
+.reg-bits {
+  color: #9cdcfe;
+  font-family: monospace;
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.reg-instr {
+  color: #dcdcaa;
+}
+
+.mem-addr {
+  color: #4ec9b0;
+  font-weight: 600;
+  min-width: 60px;
+}
+
+.mem-raw {
+  color: #9cdcfe;
+  font-family: monospace;
+  font-size: 0.75rem;
+  word-break: break-all;
+}
+
+.mem-signed {
+  color: #ce9178;
+  font-family: monospace;
+}
+
+.mem-instr {
+  color: #dcdcaa;
+  font-family: monospace;
+}
+
+.no-data {
+  color: #999;
+  padding: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.step-button {
+  padding: 0.5rem 1rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  flex: 1;
+}
+
+.step-button:hover:not(:disabled) {
+  background-color: #0098ff;
+}
+
+.step-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.memory-controls {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.75rem;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.control-group label {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+.control-group input {
+  padding: 0.4rem;
+  width: 70px;
+  background-color: #2d2d2d;
+  color: #e0e0e0;
+  border: 1px solid #3e3e3e;
+  border-radius: 3px;
+}
+
+.control-group input:focus {
+  outline: none;
+  border-color: #007acc;
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.2);
+}
+
+.dump-button {
+  padding: 0.4rem 0.75rem;
+  background-color: #007acc;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: background-color 0.2s;
+}
+
+.dump-button:hover {
+  background-color: #0098ff;
+}
